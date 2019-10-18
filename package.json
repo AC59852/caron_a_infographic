@@ -1,0 +1,35 @@
+{
+  "name": "caron_a_infographic",
+  "version": "1.0.0",
+  "description": "A package for the infographic project for MMA and EEP",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AC59852/caron_a_infographic.git"
+  },
+  "keywords": [
+    "art",
+    "authoring",
+    "mma",
+    "electronic",
+    "image",
+    "production",
+    "eep",
+    "fanshawe",
+    "infographic"
+  ],
+  "author": "Austin Caron",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AC59852/caron_a_infographic/issues"
+  },
+  "homepage": "https://github.com/AC59852/caron_a_infographic#readme",
+  "devDependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.0.6",
+    "mysql": "^2.17.1"
+  }
+}
