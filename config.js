@@ -1,9 +1,9 @@
 const config = {
-    uname: "root",
-    upass: "",
-    port: 3306,
     host: 'localhost',
-    db: 'db_artwork'
+    port: 3306,
+    uname: 'root',
+    pname: '',
+    db: 'db_svg'
 }
 
 module.exports = config;
