@@ -6,6 +6,7 @@
 	#carpet{fill:white;}
 	#carpet:hover{fill:#CC3232; transition: fill 0.2s ease-in-out;}
 	.st1{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;}
+	svg{cursor: pointer;}
 </style>
 <title>jwwIcon</title>
 <g id="XMLID_1_">
