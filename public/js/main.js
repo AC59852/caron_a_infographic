@@ -27,10 +27,10 @@ var waypoint = new Waypoint({
   const seeMoreBtns = document.querySelectorAll('.see-more'),
         popover     = document.querySelector('.popover');
 
-        function buildPopover(beerdata, el){
-            popover.querySelector('.ipa-rating').textContent = `IPA Rating: ${beerdata.IpaRating}`;
-            popover.querySelector('.ratings').textContent = `Average Rating: ${beerdata.ratings}`;
-            popover.querySelector('.beer-description').textContent = beerdata.description;
+        function buildPopover(paintingInfo, el){
+            popover.querySelector('.ipa-rating').textContent = `IPA Rating: ${paintingInfo.Iparating}`;
+            popover.querySelector('.ratings').textContent = `Average Rating: ${paintingInfo.ratings}`;
+            popover.querySelector('.beer-description').textContent = paintingInfo.description;
 
             popover.classList.add('show-popover');
             el.appendChild(popover);

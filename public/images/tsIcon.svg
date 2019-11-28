@@ -5,6 +5,7 @@
 <style type="text/css">
 	.st0{fill: white;}
 	.st0:hover{fill:#EAB081; transition: fill 0.2s ease-in-out;}
+	svg{cursor: pointer;}
 </style>
 <title>tsIcon</title>
 <g id="full">

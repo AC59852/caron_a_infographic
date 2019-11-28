@@ -1,23 +1,12 @@
-.container {
-    width: 90%;
-    margin: 0 auto;
-}
-
-.iconWrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-
-}
-
-.svg-graphic {
-    max-width: 40%;
-    width: 80%;
-    height: 250px;
-    padding: 10px;
-}
+@import '_vars';
+@import 'modules/_row1';
+@import 'modules/_row2';
+@import 'modules/_row3';
+@import 'modules/_row4';
+@import 'modules/_row5';
+@import 'modules/_icons';
 
 .hidden {
     display: none;
 }
+
