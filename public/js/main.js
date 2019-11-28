@@ -1,12 +1,27 @@
+let svg1 = document.querySelector('#waypoint'),
+    svg2 = document.querySelector('#waypoint1');
+
 var waypoint = new Waypoint({
     element: document.querySelector('#waypoint'),
     handler: function(direction) {
       console.log('Scrolled to waypoint!')
-      let svg = this.element.firstElementChild.contentDocument;
 
-      svg.querySelector("#finestText").classList.toggle('yellow');
+      svg1.classList.toggle('hide');
+      svg1.classList.remove("blank");
     },
-    offset: 400
+    offset: 130
+  });
+
+  var waypoint1 = new Waypoint({
+    element: document.querySelector('#waypoint1'),
+    handler: function(direction) {
+      console.log('Scrolled to waypoint!')
+
+      svg2.classList.toggle('hide');
+      svg2.classList.remove("blank");
+      svg1.classList.add("blank");
+    },
+    offset: 200
   });
 
   const seeMoreBtns = document.querySelectorAll('.see-more'),
