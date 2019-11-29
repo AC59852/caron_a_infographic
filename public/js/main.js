@@ -1,5 +1,7 @@
 let svg1 = document.querySelector('#waypoint'),
     svg2 = document.querySelector('#waypoint1'),
+    svg3 = document.querySelector('#waypoint2'),
+    svg4 = document.querySelector('#waypoint3'),
     closeBtn = document.querySelector('.closeBtn'),
     container = document.querySelector('.mainCon');
 
@@ -8,22 +10,43 @@ var waypoint = new Waypoint({
     handler: function(direction) {
       console.log('Scrolled to waypoint!')
 
-      svg1.classList.toggle('hide');
+      svg1.classList.toggle('appear2');
       svg1.classList.remove("blank");
     },
-    offset: 130
+    offset: -50
   });
 
   var waypoint1 = new Waypoint({
     element: document.querySelector('#waypoint1'),
     handler: function(direction) {
-      console.log('Scrolled to waypoint!')
+      console.log('Scrolled to waypoint 2!')
 
-      svg2.classList.toggle('hide');
+      svg2.classList.toggle('appear2');
       svg2.classList.remove("blank");
-      svg1.classList.add("blank");
     },
-    offset: 200
+    offset: -900
+  });
+
+  var waypoint2 = new Waypoint({
+    element: document.querySelector('#waypoint2'),
+    handler: function(direction) {
+      console.log('Scrolled to waypoint 3!')
+
+      svg3.classList.toggle('appear2');
+      svg3.classList.remove("blank");
+    },
+    offset: -1750
+  });
+
+  var waypoint3 = new Waypoint({
+    element: document.querySelector('#waypoint3'),
+    handler: function(direction) {
+      console.log('Scrolled to waypoint 4!')
+
+      svg4.classList.toggle('appear2');
+      svg4.classList.remove("blank");
+    },
+    offset: -2550
   });
 
   const seeMoreBtns = document.querySelectorAll('.see-more'),
@@ -53,6 +76,7 @@ var waypoint = new Waypoint({
             })
             .catch((err) => console.log(err));
             popup.classList.add('showPopUp');
+            popup.classList.add('appear');
             container.classList.add("hidden");
         }
 
@@ -61,4 +85,8 @@ var waypoint = new Waypoint({
     closeBtn.addEventListener("click", function() {
       popup.classList.remove("showPopUp");
       container.classList.remove("hidden");
-    })
+    });
+
+    popup.addEventListener("animationend", function() {
+      popup.classList.remove('appear');
+    });

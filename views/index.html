@@ -11,61 +11,100 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
 
     <title>SVG Animation with Waypoint and Greensock</title>
 </head>
 <body>
-    <h1 class="main-header">SVG with Greensock and Waypoint.js</h1>
+    <h1 class="main-header">Simple Squiggles</h1>
+    <h2>Most Influential Art of All Time</h2>
+    <h3>Welcome to Simple Squiggles Art Collection, Hover over the icons and figure out the most influential parts of the painting!</h3>
     <main>
         <!-- if we were using a framework, these might be 6-col or something-->
-        <section id="beer1">
-          <div class="label_wrapper">
-            <h1 class="hidden">Plain old beer</h1>
-            <object data="images/bottleGraphic.svg" type="image/svg+xml" class="svg-graphic" id="bottle"></object>
+        <div class="mainCon">
+        <section id="row1" class="container">
+          <div class="iconWrapper">
+            <h1 class="hidden">Icon Row One</h1>
+            <div class="test"><object data="images/snIcon.svg"  type="image/svg+xml" class="svg-graphic" id="gogh"></object>
+            <div class="see-more" data-target="1"><p>See More</p></div></div>
+            <div class="test"><object data="images/adamIcon.svg" type="image/svg+xml" class="svg-graphic" id="adam"></object>
+            <div class="see-more" data-target="2"><p>See More</p></div></div>
+            <div class="test"><object data="images/mnIcon.svg" type="image/svg+xml" class="svg-graphic" id="mona"></object>
+            <div class="see-more" data-target="3"><p>See More</p></div></div>
+            <div class="test"><object data="images/sdIcon.svg" type="image/svg+xml" class="svg-graphic" id="dali"></object>
+            <div class="see-more" data-target="4"><p>See More</p></div></div>
           </div>
 
-          <div class="text-wrapper">
-            <h3>Beer In Glasses</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem facere deleniti ipsam, aliquid ipsum, cum rem ut eos voluptate omnis consequuntur delectus ratione amet nobis laborum accusantium possimus odit quibusdam?
-            </p>
-            <p>
-              Possimus consequuntur amet illum ipsa laborum accusantium, dolor neque magnam ipsum, adipisci deserunt distinctio necessitatibus asperiores ad nulla? Repellendus nobis, eveniet perspiciatis. Quisquam molestiae beatae laborum quo impedit nobis quod.
-            </p>
-          </div>
         </section>
 
-        <section id="beer2">
-          <div class="label_wrapper">
-            <object data="images/beerBarrels.svg" type="image/svg+xml" class="svg-graphic" id="barrels"></object>
+        <section id="row2" class="container">
+          <div class="iconWrapper blank" id="waypoint">
+            <h1 class="hidden">Icon Row One</h1>
+            <div class="test"><object data="images/isIcon.svg"  type="image/svg+xml" class="svg-graphic" id="gogh"></object>
+            <div class="see-more" data-target="5"><p>See More</p></div></div>
+            <div class="test"><object data="images/maratIcon.svg" type="image/svg+xml" class="svg-graphic" id="adam"></object>
+            <div class="see-more" data-target="6"><p>See More</p></div></div>
+            <div class="test"><object data="images/venusIcon.svg" type="image/svg+xml" class="svg-graphic" id="mona"></object>
+            <div class="see-more" data-target="7"><p>See More</p></div></div>
+            <div class="test"><object data="images/tsIcon.svg" type="image/svg+xml" class="svg-graphic" id="dali"></object>
+            <div class="see-more" data-target="8"><p>See More</p></div></div>
           </div>
-
-          <div class="text-wrapper">
-            <h3>Beer In Barrels</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem facere deleniti ipsam, aliquid ipsum, cum rem ut eos voluptate omnis consequuntur delectus ratione amet nobis laborum accusantium possimus odit quibusdam?
-            </p>
-            <p>
-              Possimus consequuntur amet illum ipsa laborum accusantium, dolor neque magnam ipsum, adipisci deserunt distinctio necessitatibus asperiores ad nulla? Repellendus nobis, eveniet perspiciatis. Quisquam molestiae beatae laborum quo impedit nobis quod.
-            </p>
-          </div>
+          
         </section>
 
-        <section id="beer3">
-          <div class="label_wrapper">
-            <h1 class="hidden">Plain old beer</h1>
-            <object data="images/qualityBeer.svg" type="image/svg+xml" class="svg-graphic" id="glasses"></object>
+        <section id="row3" class="container">
+           <div class="iconWrapper blank" id="waypoint1">
+            <h1 class="hidden">Icon Row One</h1>
+            <div class="test"><object data="images/seuIcon.svg"  type="image/svg+xml" class="svg-graphic" id="gogh"></object>
+            <div class="see-more" data-target="9"><p>See More</p></div></div>
+            <div class="test"><object data="images/stIcon.svg" type="image/svg+xml" class="svg-graphic" id="adam"></object>
+            <div class="see-more" data-target="10"><p>See More</p></div></div>
+            <div class="test"><object data="images/pearIcon.svg" type="image/svg+xml" class="svg-graphic" id="mona"></object>
+            <div class="see-more" data-target="11"><p>See More</p></div></div>
+            <div class="test"><object data="images/paulIcon.svg" type="image/svg+xml" class="svg-graphic" id="dali"></object>
+            <div class="see-more" data-target="12"><p>See More</p></div></div>
           </div>
+           </section>
 
-          <div class="text-wrapper">
-            <h3>Beer in Fancy Glasses</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem facere deleniti ipsam, aliquid ipsum, cum rem ut eos voluptate omnis consequuntur delectus ratione amet nobis laborum accusantium possimus odit quibusdam?
-            </p>
+          <section id="row4" class="container">
+           <div class="iconWrapper blank" id="waypoint2">
+            <h1 class="hidden">Icon Row One</h1>
+            <div class="test"><object data="images/jwwIcon.svg"  type="image/svg+xml" class="svg-graphic" id="gogh"></object>
+            <div class="see-more" data-target="13"><p>See More</p></div></div>
+            <div class="test"><object data="images/picIcon.svg" type="image/svg+xml" class="svg-graphic" id="adam"></object>
+            <div class="see-more" data-target="14"><p>See More</p></div></div>
+            <div class="test"><object data="images/waveIcon.svg" type="image/svg+xml" class="svg-graphic" id="mona"></object>
+            <div class="see-more" data-target="15"><p>See More</p></div></div>
+            <div class="test"><object data="images/libIcon.svg" type="image/svg+xml" class="svg-graphic" id="dali"></object>
+            <div class="see-more" data-target="16"><p>See More</p></div></div>
           </div>
-        </section>
+           </section>
 
-        <section class="buffer"></section>
+           <section id="row5" class="container">
+          <div class="iconWrapper blank" id="waypoint3">
+            <h1 class="hidden">Icon Row One</h1>
+            <div class="test"><object data="images/barIcon.svg"  type="image/svg+xml" class="svg-graphic" id="gogh"></object>
+            <div class="see-more" data-target="17"><p>See More</p></div></div>
+            <div class="test"><object data="images/goyIcon.svg" type="image/svg+xml" class="svg-graphic" id="adam"></object>
+            <div class="see-more" data-target="18"><p>See More</p></div></div>
+            <div class="test"><object data="images/gothIcon.svg" type="image/svg+xml" class="svg-graphic" id="mona"></object>
+            <div class="see-more" data-target="19"><p>See More</p></div></div>
+            <div class="test"><object data="images/thinkIcon.svg" type="image/svg+xml" class="svg-graphic" id="dali"></object>
+            <div class="see-more" data-target="20"><p>See More</p></div></div>
+          </div>
+          </div>
+           </section>
+           <article class="popup">
+             <span class="closeBtn">X</span>
+          <h4 class="paintName"></h4>
+          <h4 class="paintArtist"></h4>
+          <div class="artTime">
+            <h4 class="paintYear"></h4>
+            <h4 class="paintGenre"></h4>
+          </div>
+          <img src="" class="paintImage" alt="Image of Painting">
+          <p class="paintDesc"></p>
+        </article>
     </main>
     <script src="js/main.js"></script>
 </body>
