@@ -12,7 +12,7 @@ as well as small snippets of each individual piece.
 
 ## Setup
 
-To setup the site, load the database from the assets folder locally (this can be done through a SQL terminal, or PHPMyAdmin).
+To setup the site, load the database from the **utils** folder locally (this can be done through a SQL terminal, or PHPMyAdmin).
 <br>
 Open up the project and type **npm install** into the console. This will install all needed packages.
 <br>
