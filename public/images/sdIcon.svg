@@ -9,7 +9,6 @@
 	.st2:hover{fill:#51D0E5; transition: fill 0.2s ease-in-out;}
 	.st3{fill:#2D2D2D;}
 	.st4{fill:none;stroke:#E8E85B;stroke-width:6;stroke-miterlimit:10;}
-	svg{cursor: pointer;}
 </style>
 <title>sdIcon</title>
 <polygon id="deskUpper" class="st0" points="0,0 175,0 175,36 0,88 "/>

@@ -1,5 +1,7 @@
 let svg1 = document.querySelector('#waypoint'),
-    svg2 = document.querySelector('#waypoint1');
+    svg2 = document.querySelector('#waypoint1'),
+    closeBtn = document.querySelector('.closeBtn'),
+    container = document.querySelector('.mainCon');
 
 var waypoint = new Waypoint({
     element: document.querySelector('#waypoint'),
@@ -25,15 +27,15 @@ var waypoint = new Waypoint({
   });
 
   const seeMoreBtns = document.querySelectorAll('.see-more'),
-        popover     = document.querySelector('.popover');
+        popup     = document.querySelector('.popup');
 
         function buildPopover(paintingInfo, el){
-            popover.querySelector('.ipa-rating').textContent = `IPA Rating: ${paintingInfo.Iparating}`;
-            popover.querySelector('.ratings').textContent = `Average Rating: ${paintingInfo.ratings}`;
-            popover.querySelector('.beer-description').textContent = paintingInfo.description;
-
-            popover.classList.add('show-popover');
-            el.appendChild(popover);
+          popup.querySelector('.paintDesc').textContent = `${paintingInfo.Description}`;
+            popup.querySelector('.paintName').textContent = `${paintingInfo.Painting}`;
+            popup.querySelector('.paintImage').src = `images/${paintingInfo.Image}.jpg`;
+            popup.querySelector('.paintGenre').textContent = `${paintingInfo.Genre}`;
+            popup.querySelector('.paintYear').textContent = `${paintingInfo.Year}`;
+            popup.querySelector('.paintArtist').textContent = `A Piece of Art By: ${paintingInfo.Artist}`;
             }
 
         function fetchData(){
@@ -50,6 +52,13 @@ var waypoint = new Waypoint({
                 buildPopover(data, targetEl);
             })
             .catch((err) => console.log(err));
+            popup.classList.add('showPopUp');
+            container.classList.add("hidden");
         }
 
     seeMoreBtns.forEach(btn => btn.addEventListener('click', fetchData));
+
+    closeBtn.addEventListener("click", function() {
+      popup.classList.remove("showPopUp");
+      container.classList.remove("hidden");
+    })
