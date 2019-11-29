@@ -6,4 +6,16 @@
 .hidden {
     display: none;
 }
+h1, h2, h3 {
+    font-family: 'Lora';
+    text-align: center;
+}
 
+.blank {
+    display: none !important;
+}
+
+.appear2 {
+    animation: appear 3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    animation-fill-mode: forwards;
+}
